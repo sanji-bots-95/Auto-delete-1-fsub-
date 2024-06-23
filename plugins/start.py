@@ -21,7 +21,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 # add time im seconds for waitingwaiting before delete 
 # 1 minutes = 60, 2 minutes = 60×2=120, 5 minutes = 60×5=300
-SECONDS = int(os.getenv("SECONDS", "600"))
+SECONDS = int(os.getenv("SECONDS", "1800"))
 
 
 
@@ -95,11 +95,11 @@ async def start_command(client: Client, message: Message):
 
             except:
                 pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓 𝐍𝐎𝐓𝐈𝐂𝐄</u> ❗️</b>\n\nTʜɪs ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 𝟷𝟶 ᴍɪɴᴜᴛᴇs (Dᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs).\n\n📌 𝙋𝙡𝙚𝙖𝙨𝙚 𝙛𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙝𝙞𝙨 𝙫𝙞𝙙𝙚𝙤 / 𝙛𝙞𝙡𝙚 𝙩𝙤 𝙨𝙖𝙫𝙚𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙖𝙣𝙙 𝙨𝙩𝙖𝙧𝙩 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙩𝙝𝙚𝙧𝙚.")
         await asyncio.sleep(SECONDS)
         for f in copied_messages:
             await f.delete()
-        await k.edit_text("Your video / file is successfully deleted !")
+        await k.edit_text("Yᴏᴜʀ ᴠɪᴅᴇᴏ / ғɪʟᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !")
 
 
         return
@@ -190,7 +190,7 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
+        pls_wait = await message.reply("<i>Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ Mᴇssᴀɢᴇ.. Tʜɪs ᴡɪʟʟ Tᴀᴋᴇ Sᴏᴍᴇ Tɪᴍᴇ</i>")
         for chat_id in query:
             try:
                 await broadcast_msg.copy(chat_id)
