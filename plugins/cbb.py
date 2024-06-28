@@ -19,12 +19,14 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>Owner - @Virtual_Monster\nMy Team - @Team_JXG\nSupport Group - @Request4anime\n\n👨‍💻 Developed by - @Urr_Sanjii</b>",
+            text = f"<b>○ 𝐃ᴇᴠᴇʟᴏᴘᴇᴅ 𝐁ʏ : <a href='https://t.me/Straw_Hat_Bots'>𝐒ᴛʀᴀᴡ 𝐇ᴀᴛ ꭙ 𝐁ᴏᴛs</a>\n○ 𝐁ᴏᴛ 𝐔ᴘᴅᴀᴛᴇs : <a href='https://t.me/Straw_Hat_Bots'>𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ</a>\n○ 𝐁ᴏᴛ 𝐒ᴜᴘᴘᴏʀᴛ : <a href='https://t.me/Straw_hat_support'>𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ</a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀᴛ : <a href='https://t.me/+BSL2tOp6BGE2MGU1'>𝐒ᴛʀᴀᴡ 𝐇ᴀᴛ 𝐆ʀᴏᴜᴘ </a></b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("⚡️ Cʟᴏsᴇ", callback_data = "close")
+                        
+InlineKeyboardButton('🍁 Dᴇᴠᴇʟᴏᴘᴇʀs', url='https://t.me/Straw_Hat_Bots')                        
                     ]
                 ]
             )

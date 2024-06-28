@@ -95,7 +95,7 @@ async def start_command(client: Client, message: Message):
 
             except:
                 pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓 𝐍𝐎𝐓𝐈𝐂𝐄</u> ❗️</b>\n\nTʜɪs ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 𝟹𝟶 ᴍɪɴᴜᴛᴇs (Dᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs).\n\n📌 𝙋𝙡𝙚𝙖𝙨𝙚 𝙛𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙝𝙞𝙨 𝙫𝙞𝙙𝙚𝙤 / 𝙛𝙞𝙡𝙚 𝙩𝙤 𝙨𝙖𝙫𝙚𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙖𝙣𝙙 𝙨𝙩𝙖𝙧𝙩 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙩𝙝𝙚𝙧𝙚.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓 𝐍𝐎𝐓𝐈𝐂𝐄</u> ❗️</b>\n\nTʜɪs ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 30 ᴍɪɴᴜᴛᴇs (Dᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪssᴜᴇs).\n\n📌 𝙋𝙡𝙚𝙖𝙨𝙚 𝙛𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙝𝙞𝙨 𝙫𝙞𝙙𝙚𝙤 / 𝙛𝙞𝙡𝙚 𝙩𝙤 S𝙖𝙫𝙚𝙙 M𝙚𝙨𝙨𝙖𝙜𝙚 𝙖𝙣𝙙 𝙨𝙩𝙖𝙧𝙩 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙩𝙝𝙚𝙧𝙚.")
         await asyncio.sleep(SECONDS)
         for f in copied_messages:
             await f.delete()
@@ -107,8 +107,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("⚡️ Aʙᴏᴜᴛ", callback_data = "about"),
+                    InlineKeyboardButton("🍁 Cʟᴏsᴇ", callback_data = "close")
                 ]
             ]
         )
@@ -141,7 +141,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink)
+            InlineKeyboardButton(text="⚠️ Join Channel ⚠️", url=client.invitelink)
         ]
     ]
     try:
