@@ -6,7 +6,7 @@ pyromod==1.5
 
 
 # --- For-Database ------------ #
-pymongoa[srv]==3.12.3
+pymongo[srv]==3.12.3
 dnspython
 
 
